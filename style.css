@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gilroy';
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    height: 100%;
+    width: 100%;
+}
+#nav{
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 20px;
+    padding: 0 20px;
+}
+#nav h4{
+    font-size: 18px;
+    font-weight: 600;
+}
+#nav i{
+    background-color: black;
+    color: white;
+    padding: 7px;
+    border-radius: 50%;
+    font-weight: 500;
+}
+#center{
+    width: 100%;
+    padding: 20px 80px;
+}
+#center h1{
+    font-size: 4vw;
+    font-weight: 600;
+    line-height: 4.1vw;
+}
+#center-in{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+#center-in p{
+    font-size: 1.15vw;
+    font-weight: 600;
+    line-height: 1.18vw;
+}
+#right{
+    width: 25%;
+}
+.elem{
+    padding: 15px 0;
+    border-top: 1.5px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.elem a{
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 20px;
+    padding: 0 10px;
+}
+.elem i{
+    font-size: 20px;
+    opacity: 0;
+    padding: 0 10px;
+}
+.elem:hover i{
+    opacity: 1;
+}
+.elem:hover{
+    background-color: rgb(225, 222, 222);
+}
+#bottom{
+    height: 40%;
+    width: 100%;
+    background-image: url(https://images.unsplash.com/photo-1516053055242-6662949f0943?q=80&w=1885&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: 0 35%;
+}
+
+@media (max-width: 600px) {
+    #nav{
+        height: 50px;
+        gap: 10px;
+        padding: 0 10px;
+    }
+    #nav h4{
+        font-size: 15px;
+    }
+    #nav i{
+        padding: 7px; 
+        font-weight: 500;
+    }
+    #center{
+        width: 100%;
+        padding: 15px 20px;
+    }
+    #center h1{
+        font-size: 9vw;
+        line-height: 9.5vw;
+    }
+    #center-in{
+        margin-top: 20px;
+        gap: 25px;
+        display: flex;
+        flex-direction: column;
+    }
+    #center-in p{
+        font-size: 4vw;
+        font-weight: 500;
+        line-height: 4.4vw;
+    }
+    #right{
+        width: 100%;
+    }
+    .elem a{
+        font-weight: 500;
+        font-size: 18px;
+        padding: 0 8px;
+    }
+    .elem i{
+        opacity: 1;
+    }
+}
